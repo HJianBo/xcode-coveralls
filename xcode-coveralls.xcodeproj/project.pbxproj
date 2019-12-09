@@ -484,8 +484,7 @@
 				TargetAttributes = {
 					054513361A6C9FD4002B8F92 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 326Y53CJMD;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					054513871A6CA92A002B8F92 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -494,8 +493,7 @@
 					};
 					054513911A6CA92A002B8F92 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 326Y53CJMD;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -504,6 +502,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0545132E1A6C9FD4002B8F92;
@@ -629,24 +628,30 @@
 		0545133F1A6C9FD4002B8F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-lcrypto",
 					"-lssl",
 				);
 				PRODUCT_NAME = "xcode-coveralls";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		054513401A6C9FD4002B8F92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-lcrypto",
 					"-lssl",
 				);
 				PRODUCT_NAME = "xcode-coveralls";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -673,7 +678,9 @@
 		0545139D1A6CA92A002B8F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -683,13 +690,16 @@
 				OTHER_LDFLAGS = "-lgit2";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		0545139E1A6CA92A002B8F92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -699,6 +709,7 @@
 				OTHER_LDFLAGS = "-lgit2";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -717,12 +728,15 @@
 		054513C21A6D6247002B8F92 /* GCov */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-lcrypto",
 					"-lssl",
 				);
 				PRODUCT_NAME = "xcode-coveralls";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = GCov;
 		};
@@ -739,7 +753,9 @@
 		054513C41A6D6247002B8F92 /* GCov */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -749,6 +765,7 @@
 				OTHER_LDFLAGS = "-lgit2";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = GCov;
 		};
